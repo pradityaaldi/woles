@@ -1,6 +1,6 @@
-# WOLES - Web Observer for Lifecycle and EOL Status
+# WOLES — Web Observer for Lifecycle and EOL Status
 
-WOLES is a tool designed to detect the technologies used on a website and check their End of Life (EOL) status. WOLES uses [Wappalyzer](https://www.wappalyzer.com/) to analyze website technologies and [End of Life API](https://endoflife.date/) to retrieve EOL information for the detected technologies.
+WOLES detects the technologies running on a website and checks whether any of them have reached **End of Life (EOL)** — a fast way to surface outdated, unsupported components that carry security risk. It uses [Wappalyzer](https://www.wappalyzer.com/) to fingerprint website technologies and the [End of Life API](https://endoflife.date/) to look up EOL data for each detected version.
 
 ## Features
 
@@ -86,3 +86,7 @@ WOLES includes error handling mechanisms for the following scenarios:
 
 - **No Version Information Found**: If WOLES detects a technology but no version is available, it means the version information is either not retrievable or not available.
 - **EOL Not Found**: If the detected version is not available in the EOL database, the program will output a message stating that the EOL information is not found.
+
+## Disclaimer
+
+WOLES is intended for educational use and authorized security assessments. Only scan websites you own or have explicit permission to analyze.
